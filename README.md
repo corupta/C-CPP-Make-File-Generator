@@ -8,7 +8,7 @@ What the project is about can be found via [Project.pdf](https://github.com/coru
 
 Basically, that's a python project when run on a repository including .c/.cpp/.h files it finds out how to link those files (checks out the functions inside header files and C/C++ files matching them) and creates a makefile for such linking.
 
-Gives 
+Use the [generatemakefile_cpp.py](https://github.com/corupta/C-CPP-Make-File-Generator/blob/master/generatemakefile_cpp.py) for C++ projects (instead of C projects).
 
 ## Compile
 No need to compile it, that'a python project.
