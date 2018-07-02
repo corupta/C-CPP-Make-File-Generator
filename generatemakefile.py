@@ -5,7 +5,7 @@ import sys
 import re
 
 ## DEBUG - TEST HELPER STARTS
-exBase = 'cmpe230fall2017hw2_Testcases/tc2/'
+exBase = 'test/tc2/'
 
 #prints the func name, and result with the given args
 def dumper(func, *args):
@@ -137,11 +137,11 @@ def checkErrorsAndWarnings():
 		for header in headerFiles:
 			if header['fileName'] in includeSet:
 				if not isHeaderUsed(source['filePath'], header['methods'], header['defines']):
-					print 'Deprecated Warning! The header file', header['fileName'] + '.h was included,',
+					print 'Warning! The header file', header['fileName'] + '.h was included,',
 					print 'but not used in the file,', source['fileName'] + '.c'
 			else:
 				if isHeaderUsed(source['filePath'], header['methods'], header['defines']):
-					print 'Deprecated Error!  The header file', header['fileName'] + '.h was used,',
+					print 'Error!  The header file', header['fileName'] + '.h was used,',
 					print 'but not included in the file,', source['fileName'] + '.c'
 					#return False
 	diffSets = headerSet - allIncludeSets
